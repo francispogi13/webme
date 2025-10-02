@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding pagka tao</title>
+   <link rel="icon" type="image/x-icon" href="gogo.png">
+  <style>
+    body {
+      background: silver;
+    }
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.home-img img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+.home-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #1abc9c;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 8px;
+  box-shadow: 0 6px 15px rgba(26, 188, 156, 0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #16a085;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    max-width: 320px; 
+  }
+
+  .home-content h2 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+}
+
+        .highlight {
+      color: #fff;
+      background-color: #f64c72;
+      padding: 3px 6px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  
+  </style>
+</head>
+<body>
+
+  <section class="home">
+    <div class="home-img">
+      <img src="pangkeks.jpg" alt="Francis Profile Picture">
+    </div>
+    <div class="home-content">
+      <h2>It's me <span class="highlight">Pangkeks!</span></h2>
+
+      <a href="about.html" class="btn">About and Hobbies</a>
+      <a href="contact.html" class="btn">See My Contact</a>
+    </div>
+  </section>
+
+</body>
+</html>
+
